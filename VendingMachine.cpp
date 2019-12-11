@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int mulai() {
 	int pil,i;
 	string baru;
@@ -58,3 +57,30 @@ switch(pil) {
 				cetak<<"\n\n==================================\n";
 				break;
 			}
+		case 3:
+			{
+				jika(tumpuk.atas==-1) {
+					cetak<<"Tumpukan Kosong\n";	
+					getch();
+				} lain {
+					cetak<<"\nMinuman pada tumpukan saat ini adalah : \n";
+					for(int i=0; i<=tumpuk.atas; i++) {
+						cetak<<"minuman ke "<<i<<" : "<<tumpuk.minuman[i]<<endl;
+					}
+					cetak<<endl;
+					getch();
+				}
+				cetak<<"===================================\n";
+				break;
+			}
+			default:
+				cetak<<"\nTidak ada dalam pilihan";
+ 				cetak<<endl;
+ 				cetak<<"=====================================\n";
+ 				
+		}
+	}
+	while(pil!=4);
+	getch();
+}
+
