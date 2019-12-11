@@ -21,3 +21,40 @@ int mulai() {
 		cetak<<"4.End Data\n";
 		cetak<<"\nPilihan = ";
 		input>>pil;
+
+switch(pil) {
+		case 1:
+			{
+				jika(tumpuk.atas==7-1) {
+					cetak<<"Tumpukan Penuh\n";
+					getch();
+				} lain {
+					cetak<<"Masukkan Minuman yang akan di Jual : ";
+					input>>baru;
+					tumpuk.atas++;
+					tumpuk.minuman[tumpuk.atas]=baru;
+				}
+				cetak<<"==================================\n";
+				break;
+			}
+		case 2:
+			{
+				jika(tumpuk.atas==-1) {
+					cetak<<"Tumpukan Kosong\n";
+					getch();
+				} lain {
+					cetak<<"Masukkan uang anda : ";
+					int uang ;
+					input>>uang;
+					jika (uang==5000) {
+						cetak<<"Minuman yang dibeli: "<<tumpuk.minuman[tumpuk.atas];
+						tumpuk.atas--;
+						cetak<<endl;
+						getch();
+					} lain {
+						cetak<<"\nMasukkan uang 5000 ";
+					}
+				}
+				cetak<<"\n\n==================================\n";
+				break;
+			}
